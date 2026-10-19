@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "data": {
+    "url": "../data/tra_seasonal_activity_2024.csv"
+  },
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "nominal",
+      "title": "2024 quarter",
+      "sort": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ]
+    },
+    "y": {
+      "field": "activity",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Beach",
+        "National parks",
+        "Bushwalking",
+        "Fishing",
+        "Surfing",
+        "Snow skiing"
+      ]
+    },
+    "color": {
+      "field": "annual_share_pct",
+      "type": "quantitative",
+      "title": "Share of annual activity trips (%)",
+      "scale": {
+        "scheme": "tealblues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "activity",
+        "type": "nominal",
+        "title": "Activity"
+      },
+      {
+        "field": "quarter",
+        "type": "nominal",
+        "title": "Quarter"
+      },
+      {
+        "field": "annual_share_pct",
+        "type": "quantitative",
+        "title": "Share of year (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "trips_000",
+        "type": "quantitative",
+        "title": "Trips (000)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "width": "container",
+  "height": 280,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b",
+      "gridColor": "#e6eeec"
+    },
+    "legend": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b"
+    }
+  }
+}

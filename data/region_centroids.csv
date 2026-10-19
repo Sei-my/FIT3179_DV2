@@ -1,0 +1,335 @@
+region,state,activity,trips_000,longitude,latitude
+Blue Mountains,NSW,Beach,20.9688,150.12227,-33.52821
+Blue Mountains,NSW,National parks,490.2038,150.12227,-33.52821
+Blue Mountains,NSW,Bushwalking,561.4017,150.12227,-33.52821
+Blue Mountains,NSW,Fishing,12.1226,150.12227,-33.52821
+Southern Tablelands,NSW,Beach,22.9514,149.30882,-34.95059
+Southern Tablelands,NSW,National parks,178.3662,149.30882,-34.95059
+Southern Tablelands,NSW,Bushwalking,306.1173,149.30882,-34.95059
+Southern Tablelands,NSW,Fishing,58.8103,149.30882,-34.95059
+Sydney,NSW,Beach,1696.9193,150.97821,-33.66416
+Sydney,NSW,National parks,603.2537,150.97821,-33.66416
+Sydney,NSW,Bushwalking,474.5987,150.97821,-33.66416
+Sydney,NSW,Fishing,98.5707,150.97821,-33.66416
+Sydney,NSW,Surfing,51.6673,150.97821,-33.66416
+Hunter,NSW,Beach,1227.7179,151.06494,-32.38215
+Hunter,NSW,National parks,430.1929,151.06494,-32.38215
+Hunter,NSW,Bushwalking,492.6577,151.06494,-32.38215
+Hunter,NSW,Fishing,141.4241,151.06494,-32.38215
+Hunter,NSW,Surfing,56.9024,151.06494,-32.38215
+Hunter,NSW,Snow skiing,7.3681,151.06494,-32.38215
+New England North West,NSW,Beach,10.0761,150.67223,-30.06691
+New England North West,NSW,National parks,212.9875,150.67223,-30.06691
+New England North West,NSW,Bushwalking,186.3786,150.67223,-30.06691
+New England North West,NSW,Fishing,69.8902,150.67223,-30.06691
+New England North West,NSW,Surfing,5.7007,150.67223,-30.06691
+Central Coast,NSW,Beach,943.9515,151.27729,-33.29516
+Central Coast,NSW,National parks,207.8925,151.27729,-33.29516
+Central Coast,NSW,Bushwalking,253.1036,151.27729,-33.29516
+Central Coast,NSW,Fishing,81.4414,151.27729,-33.29516
+Central Coast,NSW,Surfing,68.1588,151.27729,-33.29516
+Central NSW,NSW,Beach,29.534,148.51656,-32.31056
+Central NSW,NSW,National parks,192.4553,148.51656,-32.31056
+Central NSW,NSW,Bushwalking,234.3441,148.51656,-32.31056
+Central NSW,NSW,Fishing,61.3278,148.51656,-32.31056
+Limestone Coast,SA,Beach,231.074,140.35911,-36.9009
+Limestone Coast,SA,National parks,164.1636,140.35911,-36.9009
+Limestone Coast,SA,Bushwalking,120.6557,140.35911,-36.9009
+Limestone Coast,SA,Fishing,49.3772,140.35911,-36.9009
+Limestone Coast,SA,Surfing,7.9293,140.35911,-36.9009
+"Murray River, Lakes and Coorong",SA,Beach,22.6243,140.05798,-35.36258
+"Murray River, Lakes and Coorong",SA,National parks,42.9836,140.05798,-35.36258
+"Murray River, Lakes and Coorong",SA,Bushwalking,39.9221,140.05798,-35.36258
+"Murray River, Lakes and Coorong",SA,Fishing,35.6268,140.05798,-35.36258
+Eyre Peninsula,SA,Beach,136.6144,135.70741,-33.14171
+Eyre Peninsula,SA,National parks,46.1464,135.70741,-33.14171
+Eyre Peninsula,SA,Bushwalking,42.6605,135.70741,-33.14171
+Eyre Peninsula,SA,Fishing,41.6598,135.70741,-33.14171
+Eyre Peninsula,SA,Surfing,5.9438,135.70741,-33.14171
+Fleurieu Peninsula,SA,Beach,326.0319,138.80167,-35.30226
+Fleurieu Peninsula,SA,National parks,66.9024,138.80167,-35.30226
+Fleurieu Peninsula,SA,Bushwalking,117.1023,138.80167,-35.30226
+Fleurieu Peninsula,SA,Fishing,38.4332,138.80167,-35.30226
+Fleurieu Peninsula,SA,Surfing,2.3937,138.80167,-35.30226
+Riverland,SA,Beach,8.815,140.03746,-34.42329
+Riverland,SA,National parks,20.3529,140.03746,-34.42329
+Riverland,SA,Bushwalking,50.4361,140.03746,-34.42329
+Riverland,SA,Fishing,48.1021,140.03746,-34.42329
+Yorke Peninsula,SA,Beach,351.4275,137.71803,-34.38655
+Yorke Peninsula,SA,National parks,88.6423,137.71803,-34.38655
+Yorke Peninsula,SA,Bushwalking,66.0348,137.71803,-34.38655
+Yorke Peninsula,SA,Fishing,193.9031,137.71803,-34.38655
+Yorke Peninsula,SA,Surfing,5.1509,137.71803,-34.38655
+Litchfield Kakadu Arnhem,NT,Beach,42.5216,133.94769,-12.72077
+Litchfield Kakadu Arnhem,NT,National parks,46.6093,133.94769,-12.72077
+Litchfield Kakadu Arnhem,NT,Bushwalking,46.2025,133.94769,-12.72077
+Litchfield Kakadu Arnhem,NT,Fishing,48.2557,133.94769,-12.72077
+Barossa,SA,National parks,22.4927,138.88797,-34.51704
+Barossa,SA,Bushwalking,29.0982,138.88797,-34.51704
+Katherine Daly,NT,Beach,9.6122,132.84036,-15.81442
+Katherine Daly,NT,National parks,44.7809,132.84036,-15.81442
+Katherine Daly,NT,Bushwalking,41.9706,132.84036,-15.81442
+Katherine Daly,NT,Fishing,42.6262,132.84036,-15.81442
+Clare Valley,SA,National parks,7.8443,138.94512,-33.728
+Clare Valley,SA,Bushwalking,24.8109,138.94512,-33.728
+Barkly,NT,National parks,26.7623,135.00985,-19.2909
+Barkly,NT,Bushwalking,31.1031,135.00985,-19.2909
+Barkly,NT,Fishing,2.3922,135.00985,-19.2909
+Wimmera,VIC,Beach,11.5042,142.22363,-36.33172
+Wimmera,VIC,National parks,67.714,142.22363,-36.33172
+Wimmera,VIC,Bushwalking,23.5929,142.22363,-36.33172
+Wimmera,VIC,Fishing,9.0492,142.22363,-36.33172
+Adelaide,SA,Beach,741.8867,138.62307,-34.85856
+Adelaide,SA,National parks,269.6281,138.62307,-34.85856
+Adelaide,SA,Bushwalking,161.1894,138.62307,-34.85856
+Adelaide,SA,Fishing,30.3743,138.62307,-34.85856
+Adelaide,SA,Surfing,6.8917,138.62307,-34.85856
+Alice Springs,NT,Beach,5.1842,133.85042,-23.75032
+Alice Springs,NT,National parks,47.0359,133.85042,-23.75032
+Alice Springs,NT,Bushwalking,48.2974,133.85042,-23.75032
+Adelaide Hills,SA,Beach,1.7211,138.85677,-35.02749
+Adelaide Hills,SA,National parks,9.686,138.85677,-35.02749
+Adelaide Hills,SA,Bushwalking,32.3512,138.85677,-35.02749
+Lasseter,NT,National parks,110.7145,131.40779,-24.90235
+Lasseter,NT,Bushwalking,82.8714,131.40779,-24.90235
+MacDonnell,NT,National parks,16.0964,131.38603,-21.50838
+MacDonnell,NT,Bushwalking,24.4793,131.38603,-21.50838
+South Coast,NSW,Beach,2541.3135,149.97473,-35.79839
+South Coast,NSW,National parks,808.5945,149.97473,-35.79839
+South Coast,NSW,Bushwalking,905.2944,149.97473,-35.79839
+South Coast,NSW,Fishing,461.2595,149.97473,-35.79839
+South Coast,NSW,Surfing,152.9522,149.97473,-35.79839
+The Murray,NSW,Beach,49.1596,143.14206,-34.43309
+The Murray,NSW,National parks,69.3559,143.14206,-34.43309
+The Murray,NSW,Bushwalking,130.8858,143.14206,-34.43309
+The Murray,NSW,Fishing,75.5628,143.14206,-34.43309
+Riverina,NSW,Beach,32.6672,146.15713,-34.7197
+Riverina,NSW,National parks,62.9285,146.15713,-34.7197
+Riverina,NSW,Bushwalking,78.0657,146.15713,-34.7197
+Riverina,NSW,Fishing,97.0594,146.15713,-34.7197
+Snowy Mountains,NSW,Beach,8.6888,148.87272,-36.46214
+Snowy Mountains,NSW,National parks,407.5956,148.87272,-36.46214
+Snowy Mountains,NSW,Bushwalking,258.4012,148.87272,-36.46214
+Snowy Mountains,NSW,Fishing,88.3125,148.87272,-36.46214
+Snowy Mountains,NSW,Snow skiing,208.4802,148.87272,-36.46214
+Darwin,NT,Beach,116.9768,131.16979,-12.5085
+Darwin,NT,National parks,145.6939,131.16979,-12.5085
+Darwin,NT,Bushwalking,87.5645,131.16979,-12.5085
+Darwin,NT,Fishing,30.4695,131.16979,-12.5085
+Townsville,QLD,Beach,251.3003,146.06289,-20.26173
+Townsville,QLD,National parks,109.0129,146.06289,-20.26173
+Townsville,QLD,Bushwalking,100.4516,146.06289,-20.26173
+Townsville,QLD,Fishing,34.3796,146.06289,-20.26173
+Outback Queensland,QLD,Beach,30.7356,142.58607,-24.03382
+Outback Queensland,QLD,National parks,79.092,142.58607,-24.03382
+Outback Queensland,QLD,Bushwalking,106.5193,142.58607,-24.03382
+Outback Queensland,QLD,Fishing,29.3296,142.58607,-24.03382
+Gold Coast,QLD,Beach,2280.3256,153.3164,-27.96508
+Gold Coast,QLD,National parks,289.83,153.3164,-27.96508
+Gold Coast,QLD,Bushwalking,266.8919,153.3164,-27.96508
+Gold Coast,QLD,Fishing,106.9245,153.3164,-27.96508
+Gold Coast,QLD,Surfing,86.9053,153.3164,-27.96508
+Mackay,QLD,Beach,152.1432,147.77607,-22.06407
+Mackay,QLD,National parks,56.7563,147.77607,-22.06407
+Mackay,QLD,Bushwalking,50.2907,147.77607,-22.06407
+Mackay,QLD,Fishing,44.9078,147.77607,-22.06407
+Sunshine Coast,QLD,Beach,2144.5779,152.5474,-26.37177
+Sunshine Coast,QLD,National parks,673.4631,152.5474,-26.37177
+Sunshine Coast,QLD,Bushwalking,710.8249,152.5474,-26.37177
+Sunshine Coast,QLD,Fishing,184.7422,152.5474,-26.37177
+Sunshine Coast,QLD,Surfing,84.9887,152.5474,-26.37177
+Sunshine Coast,QLD,Snow skiing,2.2389,152.5474,-26.37177
+Brisbane,QLD,Beach,971.1955,153.10639,-27.58052
+Brisbane,QLD,National parks,606.6425,153.10639,-27.58052
+Brisbane,QLD,Bushwalking,625.6084,153.10639,-27.58052
+Brisbane,QLD,Fishing,168.685,153.10639,-27.58052
+Brisbane,QLD,Surfing,48.2258,153.10639,-27.58052
+Flinders Ranges and Outback,SA,Beach,18.8874,135.00123,-28.63597
+Flinders Ranges and Outback,SA,National parks,107.8373,135.00123,-28.63597
+Flinders Ranges and Outback,SA,Bushwalking,118.627,135.00123,-28.63597
+Flinders Ranges and Outback,SA,Fishing,14.3146,135.00123,-28.63597
+Queensland Country,QLD,Beach,43.7677,151.10818,-27.41541
+Queensland Country,QLD,National parks,419.1258,151.10818,-27.41541
+Queensland Country,QLD,Bushwalking,436.5364,151.10818,-27.41541
+Queensland Country,QLD,Fishing,88.2755,151.10818,-27.41541
+Queensland Country,QLD,Surfing,5.37,151.10818,-27.41541
+Fraser Coast,QLD,Beach,424.705,152.50542,-25.58927
+Fraser Coast,QLD,National parks,158.4003,152.50542,-25.58927
+Fraser Coast,QLD,Bushwalking,90.5674,152.50542,-25.58927
+Fraser Coast,QLD,Fishing,123.0357,152.50542,-25.58927
+Bundaberg,QLD,Beach,196.697,151.43295,-25.27971
+Bundaberg,QLD,National parks,77.3087,151.43295,-25.27971
+Bundaberg,QLD,Bushwalking,77.0547,151.43295,-25.27971
+Bundaberg,QLD,Fishing,50.8279,151.43295,-25.27971
+Bundaberg,QLD,Surfing,3.211,151.43295,-25.27971
+Kangaroo Island,SA,Beach,70.2824,137.15234,-35.8161
+Kangaroo Island,SA,National parks,77.7779,137.15234,-35.8161
+Kangaroo Island,SA,Bushwalking,65.1437,137.15234,-35.8161
+Kangaroo Island,SA,Fishing,30.1776,137.15234,-35.8161
+Kangaroo Island,SA,Surfing,11.0722,137.15234,-35.8161
+West Coast,TAS,Beach,41.8394,145.89431,-42.45128
+West Coast,TAS,National parks,58.5857,145.89431,-42.45128
+West Coast,TAS,Bushwalking,67.8992,145.89431,-42.45128
+West Coast,TAS,Fishing,11.317,145.89431,-42.45128
+Launceston and the North,TAS,Beach,152.8521,146.94282,-41.50638
+Launceston and the North,TAS,National parks,199.9422,146.94282,-41.50638
+Launceston and the North,TAS,Bushwalking,163.8753,146.94282,-41.50638
+Launceston and the North,TAS,Fishing,45.8512,146.94282,-41.50638
+North West,TAS,Beach,179.3436,145.4199,-41.17477
+North West,TAS,National parks,199.3893,145.4199,-41.17477
+North West,TAS,Bushwalking,193.0808,145.4199,-41.17477
+North West,TAS,Fishing,31.6139,145.4199,-41.17477
+North West,TAS,Surfing,10.0009,145.4199,-41.17477
+Hobart and the South,TAS,Beach,353.4688,146.78817,-42.66671
+Hobart and the South,TAS,National parks,363.117,146.78817,-42.66671
+Hobart and the South,TAS,Bushwalking,360.1804,146.78817,-42.66671
+Hobart and the South,TAS,Fishing,86.2764,146.78817,-42.66671
+Hobart and the South,TAS,Surfing,8.8418,146.78817,-42.66671
+East Coast,TAS,Beach,235.2814,148.20699,-41.79513
+East Coast,TAS,National parks,183.4639,148.20699,-41.79513
+East Coast,TAS,Bushwalking,178.9025,148.20699,-41.79513
+East Coast,TAS,Fishing,54.7802,148.20699,-41.79513
+East Coast,TAS,Surfing,14.2129,148.20699,-41.79513
+Tropical North Queensland,QLD,Beach,742.5038,143.42778,-15.18367
+Tropical North Queensland,QLD,National parks,482.0883,143.42778,-15.18367
+Tropical North Queensland,QLD,Bushwalking,425.5287,143.42778,-15.18367
+Tropical North Queensland,QLD,Fishing,197.228,143.42778,-15.18367
+Tropical North Queensland,QLD,Surfing,3.7883,143.42778,-15.18367
+Tropical North Queensland,QLD,Snow skiing,2.2904,143.42778,-15.18367
+Victoria's High Country,VIC,Beach,72.7785,146.5669,-36.77182
+Victoria's High Country,VIC,National parks,681.2337,146.5669,-36.77182
+Victoria's High Country,VIC,Bushwalking,683.4549,146.5669,-36.77182
+Victoria's High Country,VIC,Fishing,219.7631,146.5669,-36.77182
+Victoria's High Country,VIC,Snow skiing,277.1383,146.5669,-36.77182
+Lakes,VIC,Beach,322.7759,148.34692,-37.31506
+Lakes,VIC,National parks,246.3845,148.34692,-37.31506
+Lakes,VIC,Bushwalking,247.3779,148.34692,-37.31506
+Lakes,VIC,Fishing,144.4675,148.34692,-37.31506
+Lakes,VIC,Snow skiing,5.438,148.34692,-37.31506
+Whitsundays,QLD,Beach,505.8605,147.71801,-20.69541
+Whitsundays,QLD,National parks,172.4182,147.71801,-20.69541
+Whitsundays,QLD,Bushwalking,190.9903,147.71801,-20.69541
+Whitsundays,QLD,Fishing,84.5467,147.71801,-20.69541
+Whitsundays,QLD,Surfing,11.132,147.71801,-20.69541
+Whitsundays,QLD,Snow skiing,6.7194,147.71801,-20.69541
+Gippsland,VIC,Beach,311.6538,146.60626,-38.15742
+Gippsland,VIC,National parks,285.927,146.60626,-38.15742
+Gippsland,VIC,Bushwalking,449.7427,146.60626,-38.15742
+Gippsland,VIC,Fishing,153.8694,146.60626,-38.15742
+Gippsland,VIC,Surfing,15.5592,146.60626,-38.15742
+Gippsland,VIC,Snow skiing,9.1658,146.60626,-38.15742
+Goulburn,VIC,Beach,4.5688,145.34625,-36.85642
+Goulburn,VIC,National parks,17.5003,145.34625,-36.85642
+Goulburn,VIC,Bushwalking,80.857,145.34625,-36.85642
+Goulburn,VIC,Fishing,31.879,145.34625,-36.85642
+Capricorn Coast,QLD,Beach,158.0138,150.09784,-22.95513
+Capricorn Coast,QLD,National parks,61.1899,150.09784,-22.95513
+Capricorn Coast,QLD,Bushwalking,20.7,150.09784,-22.95513
+Capricorn Coast,QLD,Fishing,37.3336,150.09784,-22.95513
+Gladstone,QLD,Beach,190.5393,151.31039,-24.16048
+Gladstone,QLD,National parks,77.7617,151.31039,-24.16048
+Gladstone,QLD,Bushwalking,79.835,151.31039,-24.16048
+Gladstone,QLD,Fishing,90.2325,151.31039,-24.16048
+Gladstone,QLD,Surfing,14.9746,151.31039,-24.16048
+Melbourne,VIC,Beach,651.3133,144.885,-37.83095
+Melbourne,VIC,National parks,333.7998,144.885,-37.83095
+Melbourne,VIC,Bushwalking,245.5244,144.885,-37.83095
+Melbourne,VIC,Fishing,17.8518,144.885,-37.83095
+Melbourne,VIC,Surfing,13.6196,144.885,-37.83095
+Melbourne,VIC,Snow skiing,10.6174,144.885,-37.83095
+Greater Ballarat,VIC,Beach,5.0806,143.42648,-37.39302
+Greater Ballarat,VIC,National parks,46.5543,143.42648,-37.39302
+Greater Ballarat,VIC,Bushwalking,109.6386,143.42648,-37.39302
+Greater Ballarat,VIC,Fishing,27.1213,143.42648,-37.39302
+Central Murray,VIC,Beach,56.038,144.70299,-36.26972
+Central Murray,VIC,National parks,92.2821,144.70299,-36.26972
+Central Murray,VIC,Bushwalking,77.4963,144.70299,-36.26972
+Central Murray,VIC,Fishing,113.1,144.70299,-36.26972
+Geelong and the Bellarine,VIC,Beach,716.4309,143.97373,-37.92325
+Geelong and the Bellarine,VIC,National parks,101.4745,143.97373,-37.92325
+Geelong and the Bellarine,VIC,Bushwalking,124.5252,143.97373,-37.92325
+Geelong and the Bellarine,VIC,Fishing,37.8978,143.97373,-37.92325
+Geelong and the Bellarine,VIC,Surfing,31.5909,143.97373,-37.92325
+Greater Bendigo,VIC,Beach,10.223,144.03954,-36.45011
+Greater Bendigo,VIC,National parks,146.8023,144.03954,-36.45011
+Greater Bendigo,VIC,Bushwalking,145.9673,144.03954,-36.45011
+Greater Bendigo,VIC,Fishing,11.0902,144.03954,-36.45011
+Central Highlands,VIC,Beach,15.7885,142.66775,-37.12844
+Central Highlands,VIC,National parks,274.5002,142.66775,-37.12844
+Central Highlands,VIC,Bushwalking,216.3236,142.66775,-37.12844
+Central Highlands,VIC,Fishing,20.0644,142.66775,-37.12844
+Australia's South West,WA,Beach,1494.7899,117.12402,-34.04768
+Australia's South West,WA,National parks,739.7293,117.12402,-34.04768
+Australia's South West,WA,Bushwalking,858.1331,117.12402,-34.04768
+Australia's South West,WA,Fishing,299.7812,117.12402,-34.04768
+Australia's South West,WA,Surfing,79.9939,117.12402,-34.04768
+Australia's Coral Coast,WA,Beach,539.5747,114.55258,-26.64076
+Australia's Coral Coast,WA,National parks,246.9983,114.55258,-26.64076
+Australia's Coral Coast,WA,Bushwalking,194.2656,114.55258,-26.64076
+Australia's Coral Coast,WA,Fishing,220.8137,114.55258,-26.64076
+Australia's Coral Coast,WA,Surfing,50.5107,114.55258,-26.64076
+Western Grampians,VIC,Beach,8.06,141.93763,-37.20032
+Western Grampians,VIC,National parks,55.7675,141.93763,-37.20032
+Western Grampians,VIC,Bushwalking,68.267,141.93763,-37.20032
+Western Grampians,VIC,Fishing,14.394,141.93763,-37.20032
+Australia's Golden Outback,WA,Beach,135.5085,122.58265,-28.85634
+Australia's Golden Outback,WA,National parks,146.7222,122.58265,-28.85634
+Australia's Golden Outback,WA,Bushwalking,219.4088,122.58265,-28.85634
+Australia's Golden Outback,WA,Fishing,35.1434,122.58265,-28.85634
+Australia's Golden Outback,WA,Surfing,11.9703,122.58265,-28.85634
+Australia's North West,WA,Beach,154.6776,125.32771,-18.80156
+Australia's North West,WA,National parks,112.3244,125.32771,-18.80156
+Australia's North West,WA,Bushwalking,125.7616,125.32771,-18.80156
+Australia's North West,WA,Fishing,86.0404,125.32771,-18.80156
+Australia's North West,WA,Surfing,12.2351,125.32771,-18.80156
+Canberra,ACT,Beach,23.8126,148.95496,-35.54095
+Canberra,ACT,National parks,266.8962,148.95496,-35.54095
+Canberra,ACT,Bushwalking,246.8342,148.95496,-35.54095
+Canberra,ACT,Fishing,9.8773,148.95496,-35.54095
+Canberra,ACT,Snow skiing,16.7248,148.95496,-35.54095
+Destination Perth,WA,Beach,993.841,116.48934,-32.10269
+Destination Perth,WA,National parks,345.6474,116.48934,-32.10269
+Destination Perth,WA,Bushwalking,306.6437,116.48934,-32.10269
+Destination Perth,WA,Fishing,135.9566,116.48934,-32.10269
+Destination Perth,WA,Surfing,53.4516,116.48934,-32.10269
+Destination Perth,WA,Snow skiing,0.9462,116.48934,-32.10269
+Great Ocean Road,VIC,Beach,1500.4099,142.44726,-38.1141
+Great Ocean Road,VIC,National parks,438.9951,142.44726,-38.1141
+Great Ocean Road,VIC,Bushwalking,563.4248,142.44726,-38.1141
+Great Ocean Road,VIC,Fishing,162.7445,142.44726,-38.1141
+Great Ocean Road,VIC,Surfing,197.8912,142.44726,-38.1141
+Outback NSW,NSW,National parks,57.5613,144.35964,-31.16105
+Outback NSW,NSW,Bushwalking,70.8475,144.35964,-31.16105
+Outback NSW,NSW,Fishing,29.7694,144.35964,-31.16105
+Mallee,VIC,Beach,26.5877,142.14953,-34.91457
+Mallee,VIC,National parks,106.3607,142.14953,-34.91457
+Mallee,VIC,Bushwalking,98.1475,142.14953,-34.91457
+Mallee,VIC,Fishing,100.895,142.14953,-34.91457
+Yarra Valley and Dandenong Ranges,VIC,Beach,9.4525,145.55077,-37.89252
+Yarra Valley and Dandenong Ranges,VIC,National parks,168.1382,145.55077,-37.89252
+Yarra Valley and Dandenong Ranges,VIC,Bushwalking,215.4253,145.55077,-37.89252
+North Coast NSW,NSW,Beach,3135.208,152.73166,-30.45894
+North Coast NSW,NSW,National parks,895.197,152.73166,-30.45894
+North Coast NSW,NSW,Bushwalking,1007.1213,152.73166,-30.45894
+North Coast NSW,NSW,Fishing,496.7689,152.73166,-30.45894
+North Coast NSW,NSW,Surfing,363.4376,152.73166,-30.45894
+Macedon,VIC,Beach,5.1687,144.63094,-37.33514
+Macedon,VIC,National parks,55.0691,144.63094,-37.33514
+Macedon,VIC,Bushwalking,34.6844,144.63094,-37.33514
+Macedon,VIC,Fishing,6.8291,144.63094,-37.33514
+Phillip Island,VIC,Beach,683.675,145.56119,-38.45688
+Phillip Island,VIC,National parks,112.4479,145.56119,-38.45688
+Phillip Island,VIC,Bushwalking,131.1676,145.56119,-38.45688
+Phillip Island,VIC,Fishing,75.2569,145.56119,-38.45688
+Phillip Island,VIC,Surfing,31.3171,145.56119,-38.45688
+Spa Country,VIC,National parks,74.2326,144.05652,-37.05278
+Spa Country,VIC,Bushwalking,119.7319,144.05652,-37.05278
+Spa Country,VIC,Fishing,2.9029,144.05652,-37.05278
+Murray East,VIC,National parks,25.5904,146.9203,-36.15852
+Murray East,VIC,Bushwalking,34.0571,146.9203,-36.15852
+Murray East,VIC,Fishing,3.8887,146.9203,-36.15852
+Mornington Peninsula,VIC,Beach,1114.3763,145.12688,-38.26943
+Mornington Peninsula,VIC,National parks,277.4802,145.12688,-38.26943
+Mornington Peninsula,VIC,Bushwalking,294.0451,145.12688,-38.26943
+Mornington Peninsula,VIC,Fishing,77.4056,145.12688,-38.26943
+Mornington Peninsula,VIC,Surfing,21.6563,145.12688,-38.26943

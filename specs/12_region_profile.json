@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "data": {
+    "url": "../data/tra_seasonal_activity_2024.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "y": {
+      "field": "activity",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Beach",
+        "Surfing",
+        "Fishing",
+        "National parks",
+        "Bushwalking",
+        "Snow skiing"
+      ],
+      "axis": {
+        "labelLimit": 170,
+        "labelFontSize": 12
+      }
+    },
+    "x": {
+      "field": "annual_share_pct",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Share of each activity’s annual trips (%)",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      },
+      "axis": {
+        "values": [
+          0,
+          25,
+          50,
+          75,
+          100
+        ],
+        "labelExpr": "datum.value + '%'"
+      }
+    },
+    "color": {
+      "field": "season",
+      "type": "nominal",
+      "title": "Quarter / season",
+      "scale": {
+        "domain": [
+          "Q1 · Summer",
+          "Q2 · Autumn",
+          "Q3 · Winter",
+          "Q4 · Spring"
+        ],
+        "range": [
+          "#e1a460",
+          "#7fb1a9",
+          "#588ca6",
+          "#c08b7f"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal"
+      }
+    },
+    "order": {
+      "field": "quarter_number",
+      "type": "ordinal",
+      "sort": "ascending"
+    },
+    "tooltip": [
+      {
+        "field": "activity",
+        "type": "nominal",
+        "title": "Activity"
+      },
+      {
+        "field": "season",
+        "type": "nominal",
+        "title": "Quarter"
+      },
+      {
+        "field": "annual_share_pct",
+        "type": "quantitative",
+        "title": "Share of year (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "trips_000",
+        "type": "quantitative",
+        "title": "Overnight trips (000)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "width": "container",
+  "height": 285,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b",
+      "gridColor": "#e6eeec"
+    },
+    "legend": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.quarter === 'Q1' ? 'Q1 · Summer' : datum.quarter === 'Q2' ? 'Q2 · Autumn' : datum.quarter === 'Q3' ? 'Q3 · Winter' : 'Q4 · Spring'",
+      "as": "season"
+    }
+  ]
+}

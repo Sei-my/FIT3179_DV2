@@ -1,0 +1,50 @@
+TRA Online
+
+"Domestic Overnight Trips"
+"Quarter by Gender by Stopover activity"
+"Counting: Overnight trips (000)"
+
+Filters:
+"Default Summation","Overnight trips (000)"
+
+" December quarter 2024"
+"Stopover activity","Go to the beach","Visit national parks / state parks","Bushwalking / rainforest walks","Fishing","Surfing","Snow skiing","Total",
+"Gender",
+"Male",3509.8916947,1780.8756315,1799.4813972,951.0053964,233.8723363,0.9462499,5428.4576963,
+"Female",3930.501209,1734.2428521,1789.3976465,515.4760634,165.5099389,10.6174495,5557.9036087,
+"Total",7440.3929037,3515.1184836,3588.8790437,1466.4814598,399.3822753,11.5636993,10986.361305,
+
+
+" September quarter 2024"
+"Stopover activity","Go to the beach","Visit national parks / state parks","Bushwalking / rainforest walks","Fishing","Surfing","Snow skiing","Total",
+"Gender",
+"Male",2661.8172991,1825.0194267,1826.8101054,662.6070627,191.0604787,287.9437673,4949.4308074,
+"Female",2751.9301133,1837.1671974,2226.7630952,262.3327014,82.8387476,199.8123075,4890.8239127,
+"Total",5413.7474124,3662.186624,4053.5732005,924.9397641,273.8992263,487.7560747,9840.2547202,
+
+
+" June quarter 2024"
+"Stopover activity","Go to the beach","Visit national parks / state parks","Bushwalking / rainforest walks","Fishing","Surfing","Snow skiing","Total",
+"Gender",
+"Male",2924.7262467,2060.8773126,1971.977668,1040.9570036,210.2565337,0,5391.8764087,
+"Female",3154.833605,1628.1898243,1948.3504501,551.7968136,84.930946,28.2964224,5067.7077601,
+"Total",6079.5598517,3689.0671369,3920.3281181,1592.7538172,295.1874798,28.2964224,10459.5841688,
+
+
+" March quarter 2024"
+"Stopover activity","Go to the beach","Visit national parks / state parks","Bushwalking / rainforest walks","Fishing","Surfing","Snow skiing","Total",
+"Gender",
+"Male",4579.1440607,2054.1256034,1909.9455099,1124.7859481,354.8681012,6.719393,6372.2991582,
+"Female",5199.176912,1881.448955,1911.6080096,624.1220081,193.6920919,0,6623.2128841,
+"Total",9778.3209727,3935.5745584,3821.5535195,1748.9079562,548.5601931,6.719393,12995.5120423,
+
+
+" Total"
+"Stopover activity","Go to the beach","Visit national parks / state parks","Bushwalking / rainforest walks","Fishing","Surfing","Snow skiing","Total",
+"Gender",
+"Male",13675.5793013,7720.8979742,7508.2146805,3779.3554109,990.0574499,295.6094101,22142.0640706,
+"Female",15036.4418392,7081.0488288,7876.1192013,1953.7275864,526.9717245,238.7261793,22139.6481656,
+"Total",28712.0211405,14801.946803,15384.3338818,5733.0829973,1517.0291744,534.3355894,44281.7122362,
+
+
+(c) Tourism Research Australia, 2024

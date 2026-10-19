@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "data": {
+    "url": "../data/tra_seasonal_activity_2024.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "nominal",
+      "title": "Quarter",
+      "sort": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ]
+    },
+    "y": {
+      "field": "annual_share_pct",
+      "type": "quantitative",
+      "title": "Share of each activity’s annual trips (%)",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      }
+    },
+    "color": {
+      "field": "activity",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Beach",
+          "Snow skiing"
+        ],
+        "range": [
+          "#137b8b",
+          "#8476a6"
+        ]
+      },
+      "legend": {
+        "orient": "bottom"
+      }
+    },
+    "xOffset": {
+      "field": "activity",
+      "type": "nominal",
+      "sort": [
+        "Beach",
+        "Snow skiing"
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "activity",
+        "type": "nominal",
+        "title": "Activity"
+      },
+      {
+        "field": "quarter",
+        "type": "nominal",
+        "title": "Quarter"
+      },
+      {
+        "field": "annual_share_pct",
+        "type": "quantitative",
+        "title": "Share of year (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "width": "container",
+  "height": 310,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b",
+      "gridColor": "#e6eeec"
+    },
+    "legend": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "activity",
+        "oneOf": [
+          "Beach",
+          "Snow skiing"
+        ]
+      }
+    }
+  ]
+}

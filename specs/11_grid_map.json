@@ -1,0 +1,1060 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#546378",
+      "titleColor": "#34445a",
+      "domain": false,
+      "tickColor": "#d5dde4",
+      "gridColor": "#e7edf1",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#546378",
+      "titleColor": "#34445a",
+      "labelFontSize": 11
+    },
+    "header": {
+      "labelColor": "#34445a",
+      "titleColor": "#34445a"
+    }
+  },
+  "data": {
+    "url": "../data/quarterly_climate_tiles_2024.csv"
+  },
+  "params": [
+    {
+      "name": "metricPick",
+      "value": "Temperature (°C)",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Temperature (°C)",
+          "Rainfall (mm)"
+        ],
+        "labels": [
+          "Temperature · °C",
+          "Rainfall · mm"
+        ],
+        "name": "Climate measure: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "metricPick === 'Temperature (°C)' ? toNumber(datum.temp_c) : toNumber(datum.rain_mm)",
+      "as": "metric_value"
+    },
+    {
+      "calculate": "metricPick === 'Temperature (°C)' ? '°C' : 'mm'",
+      "as": "metric_unit"
+    },
+    {
+      "calculate": "metricPick === 'Temperature (°C)' ? datum.metric_value / 32 : datum.metric_value / 700",
+      "as": "metric_normalized"
+    }
+  ],
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "title": {
+            "text": "Q1 · Jan–Mar",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#274a48",
+            "anchor": "middle",
+            "offset": 8
+          },
+          "width": 330,
+          "height": 185,
+          "transform": [
+            {
+              "filter": "datum.quarter_label === \"Q1 · Jan–Mar\""
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "rect",
+                "stroke": "#fff",
+                "strokeWidth": 2,
+                "cornerRadius": 5
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "color": {
+                  "field": "metric_normalized",
+                  "type": "quantitative",
+                  "title": "Climate measure",
+                  "scale": {
+                    "scheme": "tealblues",
+                    "domain": [
+                      0,
+                      1
+                    ],
+                    "clamp": true
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "state",
+                    "title": "State / territory"
+                  },
+                  {
+                    "field": "quarter_label",
+                    "title": "Quarter"
+                  },
+                  {
+                    "field": "temp_c",
+                    "title": "Temperature proxy (°C)",
+                    "format": ".1f"
+                  },
+                  {
+                    "field": "rain_mm",
+                    "title": "Quarterly rainfall (mm)",
+                    "format": ",.1f"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 14,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "text": {
+                  "field": "state",
+                  "type": "nominal"
+                },
+                "color": {
+                  "value": "#163e41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "text": "Q2 · Apr–Jun",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#274a48",
+            "anchor": "middle",
+            "offset": 8
+          },
+          "width": 330,
+          "height": 185,
+          "transform": [
+            {
+              "filter": "datum.quarter_label === \"Q2 · Apr–Jun\""
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "rect",
+                "stroke": "#fff",
+                "strokeWidth": 2,
+                "cornerRadius": 5
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "color": {
+                  "field": "metric_normalized",
+                  "type": "quantitative",
+                  "title": "Climate measure",
+                  "scale": {
+                    "scheme": "tealblues",
+                    "domain": [
+                      0,
+                      1
+                    ],
+                    "clamp": true
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "state",
+                    "title": "State / territory"
+                  },
+                  {
+                    "field": "quarter_label",
+                    "title": "Quarter"
+                  },
+                  {
+                    "field": "temp_c",
+                    "title": "Temperature proxy (°C)",
+                    "format": ".1f"
+                  },
+                  {
+                    "field": "rain_mm",
+                    "title": "Quarterly rainfall (mm)",
+                    "format": ",.1f"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 14,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "text": {
+                  "field": "state",
+                  "type": "nominal"
+                },
+                "color": {
+                  "value": "#163e41"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "spacing": 18
+    },
+    {
+      "hconcat": [
+        {
+          "title": {
+            "text": "Q3 · Jul–Sep",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#274a48",
+            "anchor": "middle",
+            "offset": 8
+          },
+          "width": 330,
+          "height": 185,
+          "transform": [
+            {
+              "filter": "datum.quarter_label === \"Q3 · Jul–Sep\""
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "rect",
+                "stroke": "#fff",
+                "strokeWidth": 2,
+                "cornerRadius": 5
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "color": {
+                  "field": "metric_normalized",
+                  "type": "quantitative",
+                  "title": "Climate measure",
+                  "scale": {
+                    "scheme": "tealblues",
+                    "domain": [
+                      0,
+                      1
+                    ],
+                    "clamp": true
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "state",
+                    "title": "State / territory"
+                  },
+                  {
+                    "field": "quarter_label",
+                    "title": "Quarter"
+                  },
+                  {
+                    "field": "temp_c",
+                    "title": "Temperature proxy (°C)",
+                    "format": ".1f"
+                  },
+                  {
+                    "field": "rain_mm",
+                    "title": "Quarterly rainfall (mm)",
+                    "format": ",.1f"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 14,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "text": {
+                  "field": "state",
+                  "type": "nominal"
+                },
+                "color": {
+                  "value": "#163e41"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "text": "Q4 · Oct–Dec",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#274a48",
+            "anchor": "middle",
+            "offset": 8
+          },
+          "width": 330,
+          "height": 185,
+          "transform": [
+            {
+              "filter": "datum.quarter_label === \"Q4 · Oct–Dec\""
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "rect",
+                "stroke": "#fff",
+                "strokeWidth": 2,
+                "cornerRadius": 5
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "scale": {
+                    "paddingInner": 0.08,
+                    "paddingOuter": 0.08
+                  },
+                  "axis": null
+                },
+                "color": {
+                  "field": "metric_normalized",
+                  "type": "quantitative",
+                  "title": "Climate measure",
+                  "scale": {
+                    "scheme": "tealblues",
+                    "domain": [
+                      0,
+                      1
+                    ],
+                    "clamp": true
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "state",
+                    "title": "State / territory"
+                  },
+                  {
+                    "field": "quarter_label",
+                    "title": "Quarter"
+                  },
+                  {
+                    "field": "temp_c",
+                    "title": "Temperature proxy (°C)",
+                    "format": ".1f"
+                  },
+                  {
+                    "field": "rain_mm",
+                    "title": "Quarterly rainfall (mm)",
+                    "format": ",.1f"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 14,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "x": {
+                  "field": "col",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "y": {
+                  "field": "row",
+                  "type": "ordinal",
+                  "axis": null
+                },
+                "text": {
+                  "field": "state",
+                  "type": "nominal"
+                },
+                "color": {
+                  "value": "#163e41"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "spacing": 18
+    },
+    {
+      "width": 280,
+      "height": 16,
+      "data": {
+        "values": [
+          {
+            "v": 0.0,
+            "x": 0.0,
+            "x2": 0.01
+          },
+          {
+            "v": 0.01,
+            "x": 0.01,
+            "x2": 0.02
+          },
+          {
+            "v": 0.02,
+            "x": 0.02,
+            "x2": 0.03
+          },
+          {
+            "v": 0.03,
+            "x": 0.03,
+            "x2": 0.04
+          },
+          {
+            "v": 0.04,
+            "x": 0.04,
+            "x2": 0.05
+          },
+          {
+            "v": 0.05,
+            "x": 0.05,
+            "x2": 0.06
+          },
+          {
+            "v": 0.06,
+            "x": 0.06,
+            "x2": 0.07
+          },
+          {
+            "v": 0.07,
+            "x": 0.07,
+            "x2": 0.08
+          },
+          {
+            "v": 0.08,
+            "x": 0.08,
+            "x2": 0.09
+          },
+          {
+            "v": 0.09,
+            "x": 0.09,
+            "x2": 0.1
+          },
+          {
+            "v": 0.1,
+            "x": 0.1,
+            "x2": 0.11
+          },
+          {
+            "v": 0.11,
+            "x": 0.11,
+            "x2": 0.12
+          },
+          {
+            "v": 0.12,
+            "x": 0.12,
+            "x2": 0.13
+          },
+          {
+            "v": 0.13,
+            "x": 0.13,
+            "x2": 0.14
+          },
+          {
+            "v": 0.14,
+            "x": 0.14,
+            "x2": 0.15
+          },
+          {
+            "v": 0.15,
+            "x": 0.15,
+            "x2": 0.16
+          },
+          {
+            "v": 0.16,
+            "x": 0.16,
+            "x2": 0.17
+          },
+          {
+            "v": 0.17,
+            "x": 0.17,
+            "x2": 0.18
+          },
+          {
+            "v": 0.18,
+            "x": 0.18,
+            "x2": 0.19
+          },
+          {
+            "v": 0.19,
+            "x": 0.19,
+            "x2": 0.2
+          },
+          {
+            "v": 0.2,
+            "x": 0.2,
+            "x2": 0.21
+          },
+          {
+            "v": 0.21,
+            "x": 0.21,
+            "x2": 0.22
+          },
+          {
+            "v": 0.22,
+            "x": 0.22,
+            "x2": 0.23
+          },
+          {
+            "v": 0.23,
+            "x": 0.23,
+            "x2": 0.24
+          },
+          {
+            "v": 0.24,
+            "x": 0.24,
+            "x2": 0.25
+          },
+          {
+            "v": 0.25,
+            "x": 0.25,
+            "x2": 0.26
+          },
+          {
+            "v": 0.26,
+            "x": 0.26,
+            "x2": 0.27
+          },
+          {
+            "v": 0.27,
+            "x": 0.27,
+            "x2": 0.28
+          },
+          {
+            "v": 0.28,
+            "x": 0.28,
+            "x2": 0.29
+          },
+          {
+            "v": 0.29,
+            "x": 0.29,
+            "x2": 0.3
+          },
+          {
+            "v": 0.3,
+            "x": 0.3,
+            "x2": 0.31
+          },
+          {
+            "v": 0.31,
+            "x": 0.31,
+            "x2": 0.32
+          },
+          {
+            "v": 0.32,
+            "x": 0.32,
+            "x2": 0.33
+          },
+          {
+            "v": 0.33,
+            "x": 0.33,
+            "x2": 0.34
+          },
+          {
+            "v": 0.34,
+            "x": 0.34,
+            "x2": 0.35
+          },
+          {
+            "v": 0.35,
+            "x": 0.35,
+            "x2": 0.36
+          },
+          {
+            "v": 0.36,
+            "x": 0.36,
+            "x2": 0.37
+          },
+          {
+            "v": 0.37,
+            "x": 0.37,
+            "x2": 0.38
+          },
+          {
+            "v": 0.38,
+            "x": 0.38,
+            "x2": 0.39
+          },
+          {
+            "v": 0.39,
+            "x": 0.39,
+            "x2": 0.4
+          },
+          {
+            "v": 0.4,
+            "x": 0.4,
+            "x2": 0.41
+          },
+          {
+            "v": 0.41,
+            "x": 0.41,
+            "x2": 0.42
+          },
+          {
+            "v": 0.42,
+            "x": 0.42,
+            "x2": 0.43
+          },
+          {
+            "v": 0.43,
+            "x": 0.43,
+            "x2": 0.44
+          },
+          {
+            "v": 0.44,
+            "x": 0.44,
+            "x2": 0.45
+          },
+          {
+            "v": 0.45,
+            "x": 0.45,
+            "x2": 0.46
+          },
+          {
+            "v": 0.46,
+            "x": 0.46,
+            "x2": 0.47
+          },
+          {
+            "v": 0.47,
+            "x": 0.47,
+            "x2": 0.48
+          },
+          {
+            "v": 0.48,
+            "x": 0.48,
+            "x2": 0.49
+          },
+          {
+            "v": 0.49,
+            "x": 0.49,
+            "x2": 0.5
+          },
+          {
+            "v": 0.5,
+            "x": 0.5,
+            "x2": 0.51
+          },
+          {
+            "v": 0.51,
+            "x": 0.51,
+            "x2": 0.52
+          },
+          {
+            "v": 0.52,
+            "x": 0.52,
+            "x2": 0.53
+          },
+          {
+            "v": 0.53,
+            "x": 0.53,
+            "x2": 0.54
+          },
+          {
+            "v": 0.54,
+            "x": 0.54,
+            "x2": 0.55
+          },
+          {
+            "v": 0.55,
+            "x": 0.55,
+            "x2": 0.56
+          },
+          {
+            "v": 0.56,
+            "x": 0.56,
+            "x2": 0.57
+          },
+          {
+            "v": 0.57,
+            "x": 0.57,
+            "x2": 0.58
+          },
+          {
+            "v": 0.58,
+            "x": 0.58,
+            "x2": 0.59
+          },
+          {
+            "v": 0.59,
+            "x": 0.59,
+            "x2": 0.6
+          },
+          {
+            "v": 0.6,
+            "x": 0.6,
+            "x2": 0.61
+          },
+          {
+            "v": 0.61,
+            "x": 0.61,
+            "x2": 0.62
+          },
+          {
+            "v": 0.62,
+            "x": 0.62,
+            "x2": 0.63
+          },
+          {
+            "v": 0.63,
+            "x": 0.63,
+            "x2": 0.64
+          },
+          {
+            "v": 0.64,
+            "x": 0.64,
+            "x2": 0.65
+          },
+          {
+            "v": 0.65,
+            "x": 0.65,
+            "x2": 0.66
+          },
+          {
+            "v": 0.66,
+            "x": 0.66,
+            "x2": 0.67
+          },
+          {
+            "v": 0.67,
+            "x": 0.67,
+            "x2": 0.68
+          },
+          {
+            "v": 0.68,
+            "x": 0.68,
+            "x2": 0.69
+          },
+          {
+            "v": 0.69,
+            "x": 0.69,
+            "x2": 0.7
+          },
+          {
+            "v": 0.7,
+            "x": 0.7,
+            "x2": 0.71
+          },
+          {
+            "v": 0.71,
+            "x": 0.71,
+            "x2": 0.72
+          },
+          {
+            "v": 0.72,
+            "x": 0.72,
+            "x2": 0.73
+          },
+          {
+            "v": 0.73,
+            "x": 0.73,
+            "x2": 0.74
+          },
+          {
+            "v": 0.74,
+            "x": 0.74,
+            "x2": 0.75
+          },
+          {
+            "v": 0.75,
+            "x": 0.75,
+            "x2": 0.76
+          },
+          {
+            "v": 0.76,
+            "x": 0.76,
+            "x2": 0.77
+          },
+          {
+            "v": 0.77,
+            "x": 0.77,
+            "x2": 0.78
+          },
+          {
+            "v": 0.78,
+            "x": 0.78,
+            "x2": 0.79
+          },
+          {
+            "v": 0.79,
+            "x": 0.79,
+            "x2": 0.8
+          },
+          {
+            "v": 0.8,
+            "x": 0.8,
+            "x2": 0.81
+          },
+          {
+            "v": 0.81,
+            "x": 0.81,
+            "x2": 0.82
+          },
+          {
+            "v": 0.82,
+            "x": 0.82,
+            "x2": 0.83
+          },
+          {
+            "v": 0.83,
+            "x": 0.83,
+            "x2": 0.84
+          },
+          {
+            "v": 0.84,
+            "x": 0.84,
+            "x2": 0.85
+          },
+          {
+            "v": 0.85,
+            "x": 0.85,
+            "x2": 0.86
+          },
+          {
+            "v": 0.86,
+            "x": 0.86,
+            "x2": 0.87
+          },
+          {
+            "v": 0.87,
+            "x": 0.87,
+            "x2": 0.88
+          },
+          {
+            "v": 0.88,
+            "x": 0.88,
+            "x2": 0.89
+          },
+          {
+            "v": 0.89,
+            "x": 0.89,
+            "x2": 0.9
+          },
+          {
+            "v": 0.9,
+            "x": 0.9,
+            "x2": 0.91
+          },
+          {
+            "v": 0.91,
+            "x": 0.91,
+            "x2": 0.92
+          },
+          {
+            "v": 0.92,
+            "x": 0.92,
+            "x2": 0.93
+          },
+          {
+            "v": 0.93,
+            "x": 0.93,
+            "x2": 0.94
+          },
+          {
+            "v": 0.94,
+            "x": 0.94,
+            "x2": 0.95
+          },
+          {
+            "v": 0.95,
+            "x": 0.95,
+            "x2": 0.96
+          },
+          {
+            "v": 0.96,
+            "x": 0.96,
+            "x2": 0.97
+          },
+          {
+            "v": 0.97,
+            "x": 0.97,
+            "x2": 0.98
+          },
+          {
+            "v": 0.98,
+            "x": 0.98,
+            "x2": 0.99
+          },
+          {
+            "v": 0.99,
+            "x": 0.99,
+            "x2": 1.0
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "title": "Selected measure: temperature (°C) or rainfall (mm)",
+            "values": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ],
+            "labelExpr": "format(datum.value * (metricPick === 'Rainfall (mm)' ? 700 : 32), '.0f')",
+            "grid": false,
+            "labelColor": "#546378",
+            "titleColor": "#34445a"
+          }
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "color": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "tealblues",
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "legend": null
+        }
+      }
+    }
+  ],
+  "spacing": 18,
+  "resolve": {
+    "scale": {
+      "color": "shared"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#546378",
+      "titleColor": "#34445a",
+      "domain": false,
+      "tickColor": "#d5dde4",
+      "gridColor": "#e7edf1",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#546378",
+      "titleColor": "#34445a",
+      "labelFontSize": 11
+    },
+    "header": {
+      "labelColor": "#34445a",
+      "titleColor": "#34445a"
+    }
+  },
+  "width": 710,
+  "height": 600,
+  "projection": {
+    "type": "mercator",
+    "center": [
+      134,
+      -27
+    ],
+    "scale": 820,
+    "translate": [
+      355,
+      295
+    ]
+  },
+  "params": [
+    {
+      "name": "activityPick",
+      "value": "Bushwalking"
+    }
+  ],
+  "data": {
+    "url": "../data/regions.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.properties[activityPick]",
+      "as": "value"
+    },
+    {
+      "calculate": "datum.properties.region",
+      "as": "region"
+    },
+    {
+      "calculate": "datum.properties.state",
+      "as": "state"
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#ffffff",
+    "strokeWidth": 0.55
+  },
+  "encoding": {
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Trips (000)",
+      "scale": {
+        "scheme": "tealblues",
+        "type": "sqrt"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "title": "Tourism region"
+      },
+      {
+        "field": "state",
+        "title": "State"
+      },
+      {
+        "field": "value",
+        "title": "Trips (000)",
+        "format": ",.1f"
+      }
+    ]
+  }
+}

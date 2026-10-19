@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#546378",
+      "titleColor": "#34445a",
+      "domain": false,
+      "tickColor": "#d5dde4",
+      "gridColor": "#e7edf1",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#546378",
+      "titleColor": "#34445a",
+      "labelFontSize": 11
+    },
+    "header": {
+      "labelColor": "#34445a",
+      "titleColor": "#34445a"
+    }
+  },
+  "width": 620,
+  "height": 495,
+  "data": {
+    "url": "../data/regional_activity.csv"
+  },
+  "transform": [
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "trips_000",
+          "as": "six_activity_sum"
+        }
+      ],
+      "groupby": [
+        "region"
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "dense_rank",
+          "as": "region_rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "six_activity_sum",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.region_rank <= 18"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "stroke": "#fff",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "activity",
+      "type": "nominal",
+      "sort": [
+        "Beach",
+        "National parks",
+        "Bushwalking",
+        "Fishing",
+        "Surfing",
+        "Snow skiing"
+      ],
+      "axis": {
+        "title": null,
+        "labelAngle": -35,
+        "labelLimit": 110
+      }
+    },
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "sort": {
+        "field": "six_activity_sum",
+        "order": "descending"
+      },
+      "axis": {
+        "title": null,
+        "labelLimit": 170
+      }
+    },
+    "color": {
+      "field": "trips_000",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "tealblues",
+        "type": "sqrt"
+      },
+      "title": "Trips (000)"
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "title": "Region"
+      },
+      {
+        "field": "activity",
+        "title": "Activity"
+      },
+      {
+        "field": "trips_000",
+        "title": "Trips (000)",
+        "format": ",.1f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+quarter,quarter_number,activity,trips_000,annual_share_pct
+Q1,1,Beach,9778.32097,34.057
+Q1,1,Bushwalking,3821.55352,24.841
+Q1,1,Fishing,1748.90796,30.506
+Q1,1,National parks,3935.57456,26.588
+Q1,1,Snow skiing,6.71939,1.258
+Q1,1,Surfing,548.56019,36.16
+Q2,2,Beach,6079.55985,21.174
+Q2,2,Bushwalking,3920.32812,25.483
+Q2,2,Fishing,1592.75381,27.782
+Q2,2,National parks,3689.06713,24.923
+Q2,2,Snow skiing,28.29642,5.296
+Q2,2,Surfing,295.18748,19.458
+Q3,3,Beach,5413.74741,18.855
+Q3,3,Bushwalking,4053.57321,26.349
+Q3,3,Fishing,924.93976,16.133
+Q3,3,National parks,3662.18663,24.741
+Q3,3,Snow skiing,487.75608,91.283
+Q3,3,Surfing,273.89923,18.055
+Q4,4,Beach,7440.3929,25.914
+Q4,4,Bushwalking,3588.87905,23.328
+Q4,4,Fishing,1466.48146,25.579
+Q4,4,National parks,3515.11848,23.748
+Q4,4,Snow skiing,11.5637,2.164
+Q4,4,Surfing,399.38228,26.327

@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "data": {
+    "url": "../data/tra_bom_state_quarter_2024.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "state",
+        "oneOf": [
+          "NSW",
+          "VIC",
+          "QLD"
+        ]
+      }
+    },
+    {
+      "filter": {
+        "field": "activity",
+        "oneOf": [
+          "Bushwalking",
+          "National parks"
+        ]
+      }
+    },
+    {
+      "filter": "quarterFilter === 'All' || datum.quarter === quarterFilter"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "activity",
+      "type": "nominal",
+      "sort": [
+        "Bushwalking",
+        "National parks"
+      ],
+      "header": {
+        "title": null,
+        "labelFontSize": 13
+      }
+    }
+  },
+  "spec": {
+    "width": 260,
+    "height": 280,
+    "mark": {
+      "type": "point",
+      "opacity": 0.85,
+      "stroke": "white",
+      "strokeWidth": 1,
+      "filled": true,
+      "size": 145
+    },
+    "encoding": {
+      "x": {
+        "field": "quarter_rainfall_mm",
+        "type": "quantitative",
+        "title": "Quarterly rainfall (mm)",
+        "scale": {
+          "zero": true
+        }
+      },
+      "y": {
+        "field": "trips_000",
+        "type": "quantitative",
+        "title": "Overnight trips (000)"
+      },
+      "color": {
+        "field": "quarter",
+        "type": "nominal",
+        "sort": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "scale": {
+          "domain": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "range": [
+            "#d79a4d",
+            "#76a8a0",
+            "#4d829e",
+            "#b07a6d"
+          ]
+        },
+        "legend": {
+          "orient": "bottom",
+          "title": "Quarter"
+        }
+      },
+      "tooltip": [
+        {
+          "field": "state",
+          "type": "nominal",
+          "title": "State"
+        },
+        {
+          "field": "quarter",
+          "type": "nominal",
+          "title": "Quarter"
+        },
+        {
+          "field": "activity",
+          "type": "nominal",
+          "title": "Activity"
+        },
+        {
+          "field": "quarter_rainfall_mm",
+          "type": "quantitative",
+          "title": "Quarterly rainfall (mm)",
+          "format": ".1f"
+        },
+        {
+          "field": "trips_000",
+          "type": "quantitative",
+          "title": "Trips (000)",
+          "format": ",.1f"
+        }
+      ],
+      "shape": {
+        "field": "state",
+        "type": "nominal",
+        "sort": [
+          "NSW",
+          "VIC",
+          "QLD"
+        ],
+        "scale": {
+          "domain": [
+            "NSW",
+            "VIC",
+            "QLD"
+          ],
+          "range": [
+            "circle",
+            "square",
+            "triangle-up"
+          ]
+        },
+        "legend": {
+          "title": "State / territory",
+          "orient": "bottom",
+          "direction": "horizontal"
+        }
+      }
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#e6eeec"
+    },
+    "legend": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b",
+      "symbolSize": 130
+    }
+  },
+  "params": [
+    {
+      "name": "quarterFilter",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "labels": [
+          "All quarters",
+          "Q1 · Jan–Mar",
+          "Q2 · Apr–Jun",
+          "Q3 · Jul–Sep",
+          "Q4 · Oct–Dec"
+        ],
+        "name": "Show quarter: "
+      }
+    }
+  ]
+}

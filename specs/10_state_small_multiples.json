@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "data": {
+    "url": "../data/tra_gender_2024.csv"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "activity",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Beach",
+        "National parks",
+        "Bushwalking",
+        "Fishing",
+        "Surfing",
+        "Snow skiing"
+      ]
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "trips_000",
+      "type": "quantitative",
+      "stack": "normalize",
+      "axis": {
+        "format": "%",
+        "title": "Share of activity-related trips"
+      }
+    },
+    "color": {
+      "field": "gender",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Female",
+          "Male"
+        ],
+        "range": [
+          "#6a9fa0",
+          "#e1a96c"
+        ]
+      },
+      "legend": {
+        "orient": "bottom"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "activity",
+        "type": "nominal",
+        "title": "Activity"
+      },
+      {
+        "field": "gender",
+        "type": "nominal",
+        "title": "Gender"
+      },
+      {
+        "field": "trips_000",
+        "type": "quantitative",
+        "title": "Trips (000)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "width": "container",
+  "height": 300,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b",
+      "gridColor": "#e6eeec"
+    },
+    "legend": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b"
+    }
+  }
+}

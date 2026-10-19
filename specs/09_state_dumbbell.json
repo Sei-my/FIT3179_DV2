@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "data": {
+    "url": "../data/tra_bom_state_quarter_2024.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": true,
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "nominal",
+      "title": "2024 quarter",
+      "sort": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ]
+    },
+    "y": {
+      "field": "trips_000",
+      "type": "quantitative",
+      "title": "VIC overnight trips (000)"
+    },
+    "color": {
+      "field": "activity",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Beach",
+          "Bushwalking"
+        ],
+        "range": [
+          "#137b8b",
+          "#93a755"
+        ]
+      },
+      "legend": {
+        "orient": "bottom"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "activity",
+        "type": "nominal",
+        "title": "Activity"
+      },
+      {
+        "field": "quarter",
+        "type": "nominal",
+        "title": "Quarter"
+      },
+      {
+        "field": "trips_000",
+        "type": "quantitative",
+        "title": "Trips (000)",
+        "format": ",.0f"
+      },
+      {
+        "field": "mean_max_temp_c",
+        "type": "quantitative",
+        "title": "Mean max °C",
+        "format": ".1f"
+      },
+      {
+        "field": "quarter_rainfall_mm",
+        "type": "quantitative",
+        "title": "Rainfall (mm)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "width": "container",
+  "height": 300,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b",
+      "gridColor": "#e6eeec"
+    },
+    "legend": {
+      "labelColor": "#52646b",
+      "titleColor": "#52646b"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "state",
+        "equal": "VIC"
+      }
+    },
+    {
+      "filter": {
+        "field": "activity",
+        "oneOf": [
+          "Beach",
+          "Bushwalking"
+        ]
+      }
+    }
+  ]
+}

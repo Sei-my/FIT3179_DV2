@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+        content="An interactive visual story about outdoor travel in Australia, based on Tourism Research Australia and Bureau of Meteorology data."
+        name="description" />
+    <title>Outside Australia — Seasonal Outdoor Travel</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script defer="" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script defer="" src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner"><a class="brand" href="#top"><span class="brand-mark">◌</span> OUTSIDE<span
+                    class="brand-light">/AU</span></a>
+            <nav aria-label="Sections"><a href="#places">Seasons</a><a href="#hotspots">Summer / winter</a><a
+                    href="#seasons">Weather</a><a href="#weather">Regions</a><a href="#patterns">People</a><a
+                    href="#explore">Climate</a></nav><span class="year-chip">2024 FOCUS</span>
+        </div>
+    </header>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>Australia,<br /><em>outside.</em></h1>
+                    <p class="hero-sub">Six outdoor activities. Four quarters. A guided story of how Australia’s
+                        seasons, temperature and rainfall coincide with different ways to explore outside.</p>
+                    <p class="author-date" id="author-date">By Seishu Ikeda / 19 October 2026</p>
+                </div>
+            </div>
+        </section>
+        <section class="intro-band">
+            <div class="container intro-grid">
+                <p class="intro-kicker">THE BIG PICTURE</p>
+                <div>
+                    <h2>One continent.<br /><span>Many ways to get outside.</span></h2>
+                    <p>Seasonal outdoor activities are the focus: start with the yearly calendar, compare summer beaches
+                        and winter snow, then examine state-level weather, regions and traveller profiles.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter" id="places">
+            <div class="container">
+                <div class="chapter-head"><span class="chapter-number">01 / 06</span>
+                    <div>
+                        <p class="eyebrow dark">THE SEASONAL RHYTHM</p>
+                        <h2>Four quarters, six different outdoor calendars.</h2>
+                        <p class="chapter-lead">Australian seasons do not produce a single pattern. Each activity has
+                            its own annual rhythm, so compare the share of its own yearly trips rather than raw totals.
+                        </p>
+                    </div>
+                </div>
+                <p class="chapter-story">Start with the big contrast: winter skiing is highly concentrated, but many
+                    other activities continue through all four quarters.</p>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">01 · SEASONAL HEATMAP</p>
+                            <h3>Each activity has its own peak</h3>
+                            <p>Colour shows what percentage of each activity’s 2024 trips occurred in each quarter.</p>
+                        </div><span class="chart-tag">2024 · NATIONAL</span>
+                    </div>
+                    <div class="chart-holder" id="chart05"></div>
+                    <p class="story-insight">The first clue: snow skiing is almost entirely
+                        a winter activity, while beach and surfing trips are more common in the summer quarter.
+                        Bushwalking is distributed much more evenly across the year.</p>
+                    <p class="chart-note">Shares sum to 100% across four quarters for each activity; colours are
+                        comparable across activities.</p>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">02 · SEASONAL PROFILES</p>
+                            <h3>Some peaks are sharper than others</h3>
+                            <p>Six activity lines on a common percentage scale make the contrasts visible.</p>
+                        </div><span class="chart-tag">2024 · NATIONAL</span>
+                    </div>
+                    <div class="chart-holder" id="chart06"></div>
+                    <p class="story-insight">A sharp winter spike separates snow skiing
+                        from the other five activities. The flatter profiles remind us that “outdoor season” is not the
+                        same for every experience.</p>
+                    <p class="chart-note">These are shares of annual activity-related trips, not population
+                        participation rates.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter chapter-tint" id="hotspots">
+            <div class="container">
+                <div class="chapter-head"><span class="chapter-number">02 / 06</span>
+                    <div>
+                        <p class="eyebrow dark">SUMMER TO WINTER</p>
+                        <h2>From the beach to the snowfields.</h2>
+                        <p class="chapter-lead">Beach-related overnight travel peaks in the warm first quarter, while
+                            snow skiing is concentrated in the winter third quarter. Geography gives those contrasting
+                            activities a place.</p>
+                    </div>
+                </div>
+                <p class="chapter-story">Seasonal peaks are easier to understand when we connect them to Australia’s
+                    landscapes and destinations.</p>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">03 · SUMMER–WINTER CONTRAST</p>
+                            <h3>Beach and snow tell opposite seasonal stories</h3>
+                            <p>Compare the share of each activity’s yearly trips in each quarter.</p>
+                        </div><span class="chart-tag">2024 · TWO ACTIVITIES</span>
+                    </div>
+                    <div class="chart-holder" id="chart02"></div>
+                    <p class="story-insight">About 91% of snow-skiing-related overnight
+                        trips fall in Q3, whereas beach trips peak in Q1 at about 34%. Their different scales are why
+                        the chart compares shares rather than raw counts.</p>
+                    <p class="chart-note">Q1 = January–March (Australian summer); Q3 = July–September (winter).</p>
+                </div>
+                <div class="viz-card viz-wide">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">04 · TOURISM REGION MAP</p>
+                            <h3>Where bushwalking-related trips are recorded</h3>
+                            <p>Tourism-region estimates provide geographic context for one of the year-round activities.
+                            </p>
+                        </div><span class="chart-tag">2024 · TOURISM REGIONS</span>
+                    </div>
+                    <div aria-label="Choropleth map of Australian tourism regions" class="chart-holder map-holder"
+                        id="chart01" role="img"></div>
+                    <p class="story-insight">Bushwalking does not disappear in winter. This
+                        map shifts the focus from when people travel to where bushwalking-related overnight trips are
+                        recorded, revealing the geographic context behind a year-round activity.</p>
+                    <p class="chart-note">Region-level overnight-trip estimates are not activity participation rates;
+                        boundaries may use a later geography.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter" id="seasons">
+            <div class="container">
+                <div class="chapter-head"><span class="chapter-number">03 / 06</span>
+                    <div>
+                        <p class="eyebrow dark">WEATHER &amp; ACTIVITY</p>
+                        <h2>What happens as temperature and rainfall change?</h2>
+                        <p class="chapter-lead">Compare quarterly state-level climate observations with activity-related
+                            overnight-trip estimates. The dots show association and seasonality, not proof that weather
+                            caused participation.</p>
+                    </div>
+                </div>
+                <p class="chapter-story">Temperature and rainfall can help explain patterns, but these observations also
+                    reflect holidays, destinations and different state tourism volumes.</p>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">05 · TEMPERATURE SCATTER</p>
+                            <h3>Warmer quarters and beach trips; colder quarters and skiing</h3>
+                            <p>Compare NSW, VIC and QLD on separate vertical scales. Colour shows quarter; shape shows
+                                state (NSW ●, VIC ■, QLD ▲). Use the quarter selector to focus on one season.</p>
+                        </div><span class="chart-tag">2024 · NSW / VIC / QLD</span>
+                    </div>
+                    <div class="chart-holder" id="chart07"></div>
+                    <p class="story-insight">The warmest observations generally accompany
+                        higher beach-trip counts, while large skiing-trip estimates appear in cooler quarters. Compare
+                        states using the different dot shapes; the patterns are associations, not proof of weather
+                        effects.</p>
+                    <p class="chart-note">Temperature is the BOM quarterly mean of daily maximum temperatures.
+                        State/quarter aggregates cannot establish causality.</p>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">06 · RAINFALL SCATTER</p>
+                            <h3>Does rainfall align with park visits and walking?</h3>
+                            <p>Each dot represents one state-quarter. Colour shows quarter; shape shows state (NSW ●,
+                                VIC ■, QLD ▲). Select a quarter to compare states in the same season.</p>
+                        </div><span class="chart-tag">2024 · NSW / VIC / QLD</span>
+                    </div>
+                    <div class="chart-holder" id="chart08"></div>
+                    <p class="story-insight">Rainfall tells a less straightforward story:
+                        similar rainfall totals can accompany different numbers of bushwalking or national-park trips.
+                        Climate matters, but it is not the only factor shaping travel.</p>
+                    <p class="chart-note">Quarterly rainfall is a state-level BOM estimate. Correlation does not prove
+                        that rain caused a change in trips.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter chapter-dark" id="weather">
+            <div class="container">
+                <div class="chapter-head"><span class="chapter-number">04 / 06</span>
+                    <div>
+                        <p class="eyebrow dark">REGIONAL VARIATION</p>
+                        <h2>Outdoor Australia looks different across regions.</h2>
+                        <p class="chapter-lead">Tourism-region maps reveal geographic concentrations, while counts
+                            reflect overnight trips associated with stopover activities—not the number of individual
+                            activity sessions.</p>
+                    </div>
+                </div>
+                <p class="chapter-story">A national seasonal average can hide strong regional concentrations. The maps
+                    make those geographic differences visible.</p>
+                <div class="viz-card viz-wide">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">07 · SYMBOL MAP</p>
+                            <h3>Snow skiing concentrates in a few tourism regions</h3>
+                            <p>The map initially shows Snow skiing. Use “Activity shown” to compare the geographic
+                                footprint of other outdoor activities.</p>
+                        </div><span class="chart-tag">2024 · TOURISM REGIONS</span>
+                    </div>
+                    <div class="chart-holder map-holder" id="chart03"></div>
+                    <p class="story-insight">Skiing-related travel is concentrated in a
+                        small number of regions. The geography helps explain why a national winter peak can coexist with
+                        many places recording little or no skiing activity.</p>
+                    <p class="chart-note">Circle sizes represent estimated overnight trips, not the number of activity
+                        sessions.</p>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">08 · REGION HEATMAP</p>
+                            <h3>Activities differ from region to region</h3>
+                            <p>Read across regions to see how the distribution varies by activity.</p>
+                        </div><span class="chart-tag">2024 · REGIONS</span>
+                    </div>
+                    <div class="chart-holder" id="chart04"></div>
+                    <p class="story-insight">Tourism regions differ in both their activity
+                        mix and overall travel volume. Read the heatmap as a comparison of recorded trip estimates, not
+                        as a ranking of residents’ preferences.</p>
+                    <p class="chart-note">Larger absolute counts can reflect greater total tourism volume, not greater
+                        propensity for an activity.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter" id="patterns">
+            <div class="container">
+                <div class="chapter-head"><span class="chapter-number">05 / 06</span>
+                    <div>
+                        <p class="eyebrow dark">ONE STATE, MANY SEASONS</p>
+                        <h2>Even within a state, seasons matter.</h2>
+                        <p class="chapter-lead">Victoria illustrates how beach-related trips can fall sharply from
+                            summer while bushwalking stays relatively steady. A short demographic comparison adds
+                            context, but the central story remains the seasons.</p>
+                    </div>
+                </div>
+                <p class="chapter-story">The Victoria example shows that activities within the same state can follow
+                    very different seasonal paths.</p>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">09 · VICTORIA QUARTERLY PROFILE</p>
+                            <h3>One state, two seasonal rhythms</h3>
+                            <p>Victoria beach and bushwalking trip estimates through 2024, with climate readings in
+                                tooltips.</p>
+                        </div><span class="chart-tag">2024 · VICTORIA</span>
+                    </div>
+                    <div class="chart-holder" id="chart09"></div>
+                    <p class="story-insight">In Victoria, beach-related trips drop markedly
+                        after Q1, while bushwalking estimates remain comparatively stable. Hover over a point to see the
+                        quarterly temperature and rainfall context.</p>
+                    <p class="chart-note">Quarterly mean maximum temperature and rainfall in tooltips are climate
+                        context, not a causal explanation.</p>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">10 · GENDER COMPOSITION</p>
+                            <h3>Fishing and surfing have different gender profiles</h3>
+                            <p>Compare female and male shares of activity-related trips.</p>
+                        </div><span class="chart-tag">2024 · NATIONAL</span>
+                    </div>
+                    <div class="chart-holder" id="chart10"></div>
+                    <p class="story-insight">Some activities also have different traveller
+                        profiles. This adds nuance to the story, but demographic differences alone cannot explain the
+                        seasonal patterns seen earlier.</p>
+                    <p class="chart-note">Percentages describe the composition of trips associated with each activity,
+                        not individual participation rates.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter chapter-tint" id="explore">
+            <div class="container">
+                <div class="chapter-head"><span class="chapter-number">06 / 06</span>
+                    <div>
+                        <p class="eyebrow dark">CLIMATE &amp; THE SEASONAL SIGNATURE</p>
+                        <h2>Different climates, different outdoor rhythms.</h2>
+                        <p class="chapter-lead">Australia’s weather varies across both states and quarters. The final
+                            comparison brings all six activities back together to show which travel patterns are highly
+                            seasonal—and which are spread more evenly through the year.</p>
+                    </div>
+                </div>
+                <p class="chapter-story">The final view connects climate differences with six activity calendars,
+                    returning to the central question: what does “outdoor season” mean in Australia?</p>
+                <div class="viz-card viz-wide">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">11 · CLIMATE GRID MAP</p>
+                            <h3>Climate differs across states and seasons</h3>
+                            <p>Choose Temperature (°C) or Rainfall (mm) to compare states across all four quarters. The
+                                colour scale and its units update with your selection.</p>
+                        </div><span class="chart-tag">2024 · BOM</span>
+                    </div>
+                    <div class="chart-holder map-holder" id="chart11"></div>
+                    <p class="story-insight">Australia does not experience one uniform
+                        season: northern and southern states have different quarterly climate profiles. Switch between
+                        temperature and rainfall to see why a single national weather narrative can be misleading.</p>
+                    <p class="chart-note">Choose a climate measure above the map. Temperature is shown in °C; quarterly
+                        rainfall is shown in mm. State-wide estimates can conceal local variation.</p>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-top">
+                        <div>
+                            <p class="chart-id">12 · THE SEASONAL SIGNATURE</p>
+                            <h3>One year, six different seasonal signatures</h3>
+                            <p>Each bar is one activity’s entire 2024 year (100%). The coloured segments reveal which
+                                quarter contributed the largest share.</p>
+                        </div><span class="chart-tag">2024 · SIX ACTIVITIES</span>
+                    </div>
+                    <div class="chart-holder" id="chart12"></div>
+                    <p class="story-insight">The final comparison makes the contrast
+                        unmistakable: Q3 accounts for over 91% of snow-skiing trips, while bushwalking and national-park
+                        trips are spread much more evenly across the four quarters.</p>
+                    <p class="chart-note">The segments sum to 100% within each activity; this compares seasonality, not
+                        total trip volumes or weather causation.</p>
+                </div>
+            </div>
+        </section>
+        <section class="outro">
+            <div class="container outro-grid">
+                <p class="eyebrow">THE TAKEAWAY</p>
+                <div>
+                    <h2>There is no single<br /><em>outdoor Australia.</em></h2>
+                    <p>Australia’s outdoor calendar has more than one rhythm. Beach and surfing trips peak in the summer
+                        quarter; snow skiing is concentrated in winter; bushwalking and national-park visits are spread
+                        more evenly across the year. State-level temperature and rainfall provide useful context, but
+                        they do not establish causation. The clearest lesson is that seasons shape outdoor travel
+                        differently across activities and places.</p>
+                </div>
+            </div>
+        </section>
+        <section class="method">
+            <div class="container">
+                <p class="quarter-key"><strong>Quarter guide:</strong> Q1 = January–March · Q2 = April–June · Q3 =
+                    July–September · Q4 = October–December</p>
+            </div>
+            <div class="container">
+                <h2>Data, methods &amp; limitations</h2>
+                <div class="method-grid">
+                    <div>
+                        <h3>Tourism Research Australia</h3>
+                        <p>TRA Online, National Visitor Survey (NVS), Domestic Overnight Trips: state-by-quarter
+                            activity estimates (2022–2024) and tourism-region activity estimates (2024). Values are
+                            estimated overnight trips in thousands (000), not individual activity sessions or unique
+                            people. Trips may include multiple activities and stopovers, so activity totals must not be
+                            added together.</p>
+                    </div>
+                    <div>
+                        <h3>Bureau of Meteorology</h3>
+                        <p>BOM 2024 monthly gridded maximum and minimum temperatures and rainfall were aggregated into
+                            approximate state/territory quarterly values using tourism-region boundaries and
+                            latitude-based grid-cell area weighting. The mean-temperature measure is derived from
+                            maximum and minimum temperatures; quarterly rainfall is an estimated mean depth (mm).
+                            These are derived regional estimates, not official BOM state climate summaries.</p>
+                    </div>
+                    <div>
+                        <h3>Geographic alignment</h3>
+                        <p>The regional maps use simplified 2026 TRA tourism-region boundaries to display 2024
+                            tourism estimates. Region names were reconciled in the processed data, but boundaries
+                            may not perfectly match the 2024 survey geography. The climate tile map is schematic,
+                            not a geographically precise map. Climate and travel comparisons are observational
+                            associations, not evidence of causation.</p>
+                    </div>
+                </div>
+                <p class="method-end">Official sources: <a href="https://www.tra.gov.au/" rel="noopener noreferrer"
+                        target="_blank">Tourism Research Australia</a> · <a href="https://www.tra.gov.au/"
+                        rel="noopener noreferrer" target="_blank">National Visitor Survey</a> · <a
+                        href="https://www.bom.gov.au/climate/" rel="noopener noreferrer" target="_blank">Bureau of
+                        Meteorology — climate data</a> · <a href="https://www.tra.gov.au/" rel="noopener noreferrer"
+                        target="_blank">TRA tourism region boundaries</a>. Visualisations built with Vega-Lite, Vega and
+                    JavaScript.</p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-inner"><span class="brand">◌ OUTSIDE<span
+                    class="brand-light">/AU</span></span><span>Seasonal Outdoor Activities Across Australia</span><a
+                href="#top">Back to top ↑</a></div>
+    </footer>
+</body>
+
+</html>
