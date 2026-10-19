@@ -383,8 +383,6 @@ a {
 .chart-holder {
   width: 100%;
   min-height: 390px;
-  overflow-x: auto;
-  overflow-y: hidden;
   padding: 7px 0 8px
 }
 
@@ -776,26 +774,6 @@ footer a {
   }
 }
 
-/* Final revision: ensure all eight small-multiple panels are visible without sideways scrolling */
-#chart10 {
-  overflow-x: hidden !important;
-  width: 100%;
-}
-
-#chart10 .vega-embed {
-  width: 100%;
-  max-width: 100%;
-}
-
-#chart10 svg {
-  max-width: 100%;
-  height: auto;
-}
-
-#chart11 {
-  overflow-x: hidden !important;
-}
-
 .quarter-key {
   border: 1px solid #dce7e3;
   border-radius: 9px;
@@ -804,16 +782,6 @@ footer a {
   font-size: 13px;
   color: #28524d;
   margin: 0 0 22px;
-}
-
-@media(max-width:900px) {
-  #chart10 {
-    overflow-x: auto !important
-  }
-
-  #chart11 {
-    overflow-x: auto !important
-  }
 }
 
 /* Unified page background and a clean, text-only introduction */
@@ -867,10 +835,6 @@ body,
 
 .chapter-dark .eyebrow.dark {
   color: var(--teal) !important
-}
-
-#chart11 {
-  overflow-x: hidden !important
 }
 
 @media(max-width:850px) {
@@ -964,12 +928,8 @@ body,
   color: #294b4e;
 }
 
-/* Fixed Vega view sizes previously forced horizontal scrollbars. Scale the
-   rendered SVG within the available card width instead of scrolling. */
-.chart-holder,
-.map-holder,
-#chart10,
-#chart11 {
+/* Keep Vega SVG charts within their cards, regardless of chart numbering. */
+.chart-holder {
   width: 100%;
   max-width: 100%;
   min-width: 0;

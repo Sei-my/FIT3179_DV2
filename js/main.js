@@ -2,18 +2,18 @@
    This file only handles embedding, accessibility and graceful loading errors. */
 "use strict";
 const visualisations = [
-    ["chart01", "01_choropleth"],
-    ["chart02", "02_top_regions"],
-    ["chart03", "03_symbol_map"],
-    ["chart04", "04_region_heatmap"],
-    ["chart05", "05_season_heatmap"],
-    ["chart06", "06_bump"],
-    ["chart07", "07_temperature_scatter"],
-    ["chart08", "08_rainfall_connected"],
-    ["chart09", "09_state_dumbbell"],
-    ["chart10", "10_state_small_multiples"],
-    ["chart11", "11_grid_map"],
-    ["chart12", "12_region_profile"]
+    ["chart01", "01_seasonal_heatmap"],
+    ["chart02", "02_seasonal_profiles"],
+    ["chart03", "03_summer_winter_contrast"],
+    ["chart04", "04_bushwalking_region_map"],
+    ["chart05", "05_temperature_scatter"],
+    ["chart06", "06_rainfall_scatter"],
+    ["chart07", "07_regional_symbol_map"],
+    ["chart08", "08_regional_activity_heatmap"],
+    ["chart09", "09_victoria_quarterly_profile"],
+    ["chart10", "10_gender_composition"],
+    ["chart11", "11_climate_grid_map"],
+    ["chart12", "12_seasonal_signature"]
 ];
 
 async function embedChart(elementId, filename) {
