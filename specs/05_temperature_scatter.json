@@ -43,7 +43,7 @@
     }
   },
   "spec": {
-    "width": 260,
+    "width": 400,
     "height": 280,
     "mark": {
       "type": "point",
