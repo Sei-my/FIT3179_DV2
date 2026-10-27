@@ -26,7 +26,7 @@ async function embedChart(elementId, filename) {
             );
         const spec = await response.json();
         await vegaEmbed(holder, spec, {
-            actions: true,
+            actions: false,
             renderer: "svg",
             tooltip: { theme: "light" },
             loader: { baseURL: new URL("specs/", document.baseURI).href }
